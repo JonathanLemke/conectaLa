@@ -75,10 +75,8 @@ class UserController extends Controller
 
     public function delete(User $user)
     {
-        // Obs: aqui eu estou deletando diretamente, mas, dependendo do caso seria melhor ter uma Policy
-        // para verificar se esse usuário tem permissão para deleção. Também verificar se não é interesante
-        // tornar essa deleção como uma deleção suave. Assim teria que criar uma nova migration adicionando
-        // uma coluna nova a tabela 'deleted_at' com $table->softDeletes(), e usar a trait SoftDeletes no model.
+        $this->authorize('delete', $user);
+
         $user->delete();
         return response()->json(null, 204);
     }
