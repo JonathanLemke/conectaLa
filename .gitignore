@@ -1,0 +1,56 @@
+# Ignore cache files
+/.phpunit.cache
+
+# Ignore Node modules and build files
+/node_modules
+/public/build
+/public/hot
+
+# Ignore Laravel storage and vendor directories
+/public/storage
+/storage/*.key
+/vendor
+
+# Ignore environment settings
+.env
+.env.backup
+.env.production
+
+# Ignore cache files
+.phpunit.result.cache
+
+# Ignore Homestead files
+Homestead.json
+Homestead.yaml
+
+# Ignore auth.json
+auth.json
+
+# Ignore log files
+npm-debug.log
+yarn-error.log
+
+# Ignore fleet and IDE settings
+/.fleet
+/.idea
+/.vscode
+
+# Ignore Laravel public directory build files
+/public/mix-manifest.json
+/public/css
+/public/js
+
+# Ignore Laravel storage directory
+/storage/framework/
+/storage/logs/
+
+# Ignore Homestead and Vagrant files
+/Homestead.yaml
+/Homestead.json
+/after.sh
+/aliases
+/.vagrant/
+
+# Ignore configuration files that may contain sensitive information
+/phpunit.xml
+
